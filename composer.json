@@ -1,0 +1,25 @@
+{
+  "name": "paywithterra/php-backend-library",
+  "description": "PHP library for tx validation on public facades",
+  "keywords": ["paywithterra","terra","crypto","payments"],
+  "version": "1.0.0",
+  "type": "library",
+  "require": {
+    "ext-json": "*",
+    "ext-curl": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "license": "MIT",
+  "homepage": "https://paywithterra.org",
+  "authors": [
+    {
+      "name": "PaywithTerra and contributors",
+      "homepage": "https://github.com/paywithterra/php-backend-library/contributors"
+    }
+  ],
+  "autoload": {
+    "psr-4": {"PaywithTerra\\": "src/"}
+  }
+}
