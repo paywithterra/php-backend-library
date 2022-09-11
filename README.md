@@ -77,6 +77,14 @@ $client = new \PaywithTerra\TerraTxValidator([
 ]);
 ~~~~
 
+## Assets (denoms) support
+
+| Denom code                                                             | Asset name / Description                                                                                                  |
+|------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| `uluna`                                                                | **Luna** <br/> Default (basic) network asset                                                                              |
+| `ibc/B3504E092456BA618CC28AC671A71FB08C6CA0FD0BE7C8A5B5A3E2DD933CC9E4` | axl**USDC** (mainnet) <br/> The USDC representation in Terra network (can be swapped from Luna right on Station Mobile)   |
+| `ibc/CBF67A2BCF6CAE343FDF251E510C8E18C361FC02B23430C121116E0811835DEF` | axl**USDT** (mainnet) <br/> The Tether representation in Terra network (can be swapped from Luna right on Station Mobile) |
+
 ## Notes
 We don't use any of modern libraries (like Guzzle or Symphony HTTP Client) as transport 
 because we want to keep the minimal supported PHP version as low as possible.  
