@@ -16,7 +16,7 @@ use RuntimeException;
  */
 class TerraTxValidator
 {
-    const VERSION = '1.0.0';
+    const VERSION = '1.0.1';
 
     private $merchantAddress = '';
     private $networkName = 'mainnet'; // testnet, mainnet, classic, localterra
@@ -201,5 +201,10 @@ class TerraTxValidator
             default:
                 throw new RuntimeException("Unknown API mode: " . $this->workingApiMode);
         }
+    }
+
+    public function getChainId()
+    {
+        return $this->chainId;
     }
 }

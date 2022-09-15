@@ -2,7 +2,7 @@
   "name": "paywithterra/php-backend-library",
   "description": "PHP library for tx validation on public facades",
   "keywords": ["paywithterra","terra","crypto","payments"],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "library",
   "require": {
     "ext-json": "*",
